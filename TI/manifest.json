@@ -1,0 +1,39 @@
+﻿{
+	"manifest_version": 2,
+	"name": "Tradutor Instantâneo",
+	"version": "3.9.4",
+	"description": "Tradução instantânea para diversos idiomas",
+
+	"browser_action": {
+	
+		"default_icon": "images/icon-19x19.png",
+		"default_title": "Tradutor Instantâneo",
+		"default_popup": "popup.html"
+	},
+
+	"icons": { 
+		
+		"16": "images/icon.png",
+		"32": "images/icon.png",
+		"48": "images/icon.png",
+		"128": "images/icon.png" 
+	},
+
+	"permissions": [
+	
+		"tabs",
+		"chrome://favicon/",
+		"http://*/*", 
+		"https://*/*"
+	],
+
+	"content_scripts": [{
+	
+		"matches": ["http://*/*"],
+		"js": ["js/content-script.js"],
+		"run_at": "document_start",
+		"all_frames": true
+	}],
+
+	"content_security_policy": "script-src 'self'; object-src 'self'"
+}

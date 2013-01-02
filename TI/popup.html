@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tradutor Instantâneo</title>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        
+        <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+    </head>
+    <body>
+        <form id="formPagSeguro" target="pagseguro" action="https://pagseguro.uol.com.br/checkout/v2/donation.html" method="post">
+            <input type="hidden" name="receiverEmail" value="dcollioni@gmail.com" />
+            <input type="hidden" name="currency" value="BRL" />
+            <input type="image" style="display:none;" src="#" name="submit" id="buttonPagSeguro" />
+        </form>
+
+        <header>
+			<h3>Tradutor Instantâneo</h3>
+		</header>
+        <div id="donate">
+            <img src="images/coffee.png" alt="Café" title="Gostaria de me pagar um café?" id="donateButton" />
+        </div>
+        <div>
+            <fieldset id="original">
+                <legend>
+                    
+                    <img id="imagemOriginal" src="images/flags/UK.png" alt="2" title="Inglês" class="selected flag" />
+                    <span id="menuOriginal">
+                        <img id="imagemOriginal1" src="images/flags/Brazil.png" alt="1" title="Português" class="unselected flag" />
+                        <img id="imagemOriginal2" src="images/flags/Spain.png" alt="3" title="Espanhol" class="unselected flag" />
+                        <img id="imagemOriginal3" src="images/flags/France.png" alt="4" title="Francês" class="unselected flag" />
+                        <img id="imagemOriginal4" src="images/flags/Italy.png" alt="5" title="Italiano" class="unselected flag" />
+                        <img id="imagemOriginal5" src="images/flags/Germany.png" alt="6" title="Alemão" class="unselected flag" />
+                        <img id="imagemOriginal6" src="images/flags/Japan.png" alt="7" title="Japonês" class="unselected flag" />
+                        <img id="imagemOriginal7" src="images/flags/UK.png" alt="2" title="Inglês" class="unselected flag" />
+                    </span>
+                </legend>
+
+                <textarea id="textoOriginal" rows="4" cols="80" autofocus></textarea>
+            </fieldset>
+        </div>
+        <div id="divReverse">
+            <img id="imagemMais" src="images/more.png" alt="Mais" title="Mais traduções" class="selected optImage" />
+            <img id="imagemInverter" src="images/reverse.png" alt="Inverter" title="Inverter tradução" class="selected optImage" />
+        </div>
+        <div>
+            <fieldset id="traduzido">
+                <legend id="legendaTraducao">
+                    <img id="imagemTraducao" src="images/flags/Brazil.png" alt="1" title="Português" class="selected flag" />
+                    <span id="menuTraducao">
+                        <img id="imagemTraducao1" src="images/flags/UK.png" alt="2" title="Inglês" class="unselected flag" />
+                        <img id="imagemTraducao2" src="images/flags/Spain.png" alt="3" title="Espanhol" class="unselected flag" />
+                        <img id="imagemTraducao3" src="images/flags/France.png" alt="4" title="Francês" class="unselected flag" />
+                        <img id="imagemTraducao4" src="images/flags/Italy.png" alt="5" title="Italiano" class="unselected flag" />
+                        <img id="imagemTraducao5" src="images/flags/Germany.png" alt="6" title="Alemão" class="unselected flag" />
+                        <img id="imagemTraducao6" src="images/flags/Japan.png" alt="7" title="Japonês" class="unselected flag" />
+                        <img id="imagemTraducao7" src="images/flags/Brazil.png" alt="1" title="Português" class="unselected flag" />
+                    </span>
+                </legend>
+                <div id="textoTraduzido">
+                </div>
+            </fieldset>
+        </div>
+
+        <div id="loading">
+            <img src="images/loading.gif" alt="Traduzindo" title="Traduzindo" />
+        </div>
+    </body>
+</html>

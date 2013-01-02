@@ -1,0 +1,215 @@
+@font-face {
+    font-family: London;
+    font-style: normal;
+    font-weight: normal;
+    src: url(fonts/LondonMM.ttf);
+}
+
+body
+{
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#F5F6FB), color-stop(0.6, #E7EAF5));
+	font-family: London, Tahoma, Arial, sans-serif;
+	font-size: 11pt;
+	width: 380px;
+	-webkit-user-select: none;
+}
+header
+{
+	text-align: center;
+}
+h3
+{
+	cursor: default;
+	font-size: 13pt;
+	font-weight: normal;
+	margin: 2px 0px 4px 0px;
+	text-shadow: #DBDBDB 1px 1px 1px;
+	letter-spacing: 1.5px;
+}
+
+img
+{
+	cursor: pointer;
+}
+
+img.unselected
+{
+    opacity: 0.2;
+}
+
+img.unselected:hover
+{
+    opacity: 0.5;
+}
+
+img.selected
+{
+    opacity: 0.7;
+}
+
+img.selected:hover
+{
+    opacity: 0.8;
+}
+
+img.selected:active
+{
+    opacity: 1;
+}
+
+fieldset
+{
+    -webkit-border-radius: 5px;
+    background: #fdfdfd;
+    border: solid 1px #c4c4c4;
+}
+
+fieldset#original
+{
+    margin-bottom: 5px;
+    box-shadow: 1px 1px 1px #dbdbdb;
+}
+
+fieldset#original legend img
+{
+    margin: 0px 1px 0px 1px;
+}
+
+fieldset#traduzido
+{
+    box-shadow: 1px 1px 1px #dbdbdb;
+    /*background-color: #ffeeee;*/
+}
+
+fieldset#traduzido legend img
+{
+    margin: 0px 1px 0px 1px;
+}
+
+textarea#textoOriginal
+{
+    background: transparent;
+    border: none;
+    font-family: London, Tahoma, Arial, Sans-Serif;
+    font-size: 11pt;
+    margin: -1px;
+    outline: none;
+    overflow: hidden;
+    resize: none;
+    text-decoration: none;
+    width: 350px;
+}
+
+div#textoTraduzido
+{
+    word-wrap: break-word;
+    width: 352px;
+    -webkit-user-select: text;
+}
+
+img.flag
+{
+    -webkit-border-radius: 12px;
+    width: 22px;
+    height: 24px;
+}
+
+div#menuOpcoes
+{
+    margin: 5px 0px -5px 5px;
+}
+
+span#menuOpcoes
+{
+    margin-left: 5px;
+}
+
+div#divReverse
+{
+    float: right;
+    margin: -10px 5px -26px 0;
+}
+
+div#divReverse img
+{
+    width: 28px;
+    height: 28px;
+}
+
+div#donate
+{
+    float: right;
+    margin: -27px 80px 0 0;
+}
+
+div#donate img
+{
+    width: 20px;
+    height: 20px;
+    opacity: 0.3;
+}
+
+div#donate img:hover
+{
+    opacity: 0.5;
+}
+
+div#donate img:active
+{
+    opacity: 0.8;
+}
+
+div#divReverse img:hover
+{
+    /*-webkit-transform: rotate(-45deg);*/
+    /*-webkit-transition: -webkit-transform 250ms;
+    opacity: 0;*/
+}
+
+#divReverse img
+{
+    -webkit-transition: opacity 250ms;
+}
+
+#donate img
+{
+    -webkit-transition: opacity 250ms;
+}
+
+/*
+div#divReverse img
+{
+    -webkit-transform-origin: -7% 100%;
+    -webkit-transition: -webkit-transform 150ms;
+}
+*/
+
+.trash:focus > .lid, .trash:hover > .lid {
+-webkit-transform: rotate(-45deg);
+-webkit-transition: -webkit-transform 250ms;
+}
+
+.trash > .lid {
+-webkit-transform-origin: -7% 100%;
+-webkit-transition: -webkit-transform 150ms;
+height: 6px;
+width: 14px;
+}
+
+/* Loading */
+
+#loading
+{
+    display: none;
+    float: left;
+    position: absolute;
+    left: 23px;
+    top: 178px;
+}
+
+#loading img
+{
+    cursor: default;
+    width: 25px;
+    height: 9px;
+}
